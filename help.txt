@@ -1,0 +1,4 @@
+npx react-native run-android	       Builds and runs the debug APK on a device.
+./gradlew assembleRelease	           Generates the release APK.
+./gradlew bundleRelease	               Generates the release AAB.
+npm start --reset-cache	               Clears the cache before building.
