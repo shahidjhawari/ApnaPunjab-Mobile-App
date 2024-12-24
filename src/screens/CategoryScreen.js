@@ -6,7 +6,7 @@ export default function CategoryScreen({ route }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch(`http://192.168.100.100:5000/api/products?category=${category}`)
+    fetch(`https://apna-punjab-backend.vercel.app/api/products?category=${category}`)
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error(error));

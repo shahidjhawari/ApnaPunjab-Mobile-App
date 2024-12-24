@@ -5,7 +5,7 @@ export default function HomeScreen({ navigation }) {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch('http://192.168.100.100:5000/api/categories') // Update with your API URL
+    fetch('https://apna-punjab-backend.vercel.app/api/categories') // Update with your API URL
       .then((response) => response.json())
       .then((data) => setCategories(data))
       .catch((error) => console.error(error));
